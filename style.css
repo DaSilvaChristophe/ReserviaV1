@@ -10,3 +10,58 @@
     font-style: normal;
     font-display: swap;
 }
+
+body
+{
+    min-width: 992px;
+    font-family: 'Raleway', Arial, Georgia, 'Times New Roman', serif;
+    font-size: 1em;
+}
+
+body a
+{
+    text-decoration: none;
+    color: rgba(0,0,0,.92);
+}
+
+/* HEADER */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 40px;
+}
+
+nav
+{
+    display: flex;
+    height: 107px;
+}
+
+nav a
+{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 15px 20px;
+    height: 107px;
+}
+
+nav a:hover
+{
+    color:#0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+#inscription
+{
+    color:#0065FC ;
+}
+
+#inscription:hover
+{
+    border: none;
+}
+
+/* MAIN */
