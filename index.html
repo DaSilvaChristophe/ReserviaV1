@@ -10,27 +10,169 @@
             <img src="images/logo/Reservia.svg" alt="logo">
             <nav>
                 <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">Hébergements</a></li> <!--Mettre ancre-->
+                    <li><a href="#">Activités</a></li> <!--Mettre ancre-->
                     <li><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <form method="post" action="pagefictive.php">
+                    <img src="images/icons/position_icon.svg" alt="icone position" width="20%"/>
+                    <label for="ville"></label> <input type="search" name="search" id="ville" placeholder="Marseille, France" maxlength="40" />
+                    <input type="submit" value="Rechercher" />
+                </form>
+                <div>
+                    <p>Filtres</p>
+                    <div>
+                        <img src="images/icons/money-bill-wave_icon.svg" alt="un billet de monnaie" width="20px">
+                        <a href="#">Économique</a>
+                    </div>
+                    <div>
+                        <img src="images/icons/child_icon.svg" alt="un enfant" width="20px">
+                        <a href="#">Familial</a>
+                    </div>
+                    <div>
+                        <img src="images/icons/heart_icon.svg" alt="un coeur" width="20px">
+                        <a href="#">Romantique</a>
+                    </div>
+                    <div>
+                        <img src="images/icons/dog_icon.svg" alt="un chien" width="20px">
+                        <a href="#">Animaux autorisés</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/icons/info_icon.svg" alt="info" width="20px">
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
                 <section>
+                    <h2>Hébergements à Marseille</h2>
+                    <div>
+                        <a href="#"> <!-- Transformez les liens hébergements et activités en block et le dimensionnez a la div-->
+                        <img src="images/hebergements/hebergements_small_1.jpg" alt="Auberge La Cannebière">
+                        <h3>Auberge La Cannebière</h3>
+                        <p>Nuit à partir de 25€</p>
+                        <!-- Etoiles -->
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img src="images/hebergements/hebergements_small_2.jpg" alt="Hôtel du port">
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de 52€</p>
+                        <!-- Etoiles -->
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img src="images/hebergements/hebergements_small_3.jpg" alt="Hôtel les mouettes">
+                        <h3>Hôtel les mouettes</h3>
+                        <p>Nuit à partir de 76€</p>
+                        <!-- Etoiles -->
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img src="images/hebergements/hebergements_small_4.jpg" alt="Hôtel de la mer">
+                        <h3>Hôtel de la mer</h3>
+                        <p>Nuit à partir de 46€</p>
+                        <!-- Etoiles -->
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img src="images/hebergements/hebergements_small_5.jpg" alt="Auberge Le Panier">
+                        <h3>Auberge Le Panier</h3>
+                        <p>Nuit à partir de 23€</p>
+                        <!-- Etoiles -->
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img src="images/hebergements/hebergements_small_6.jpg" alt="Hôtel chez Amina">
+                        <h3>Hôtel chez Amina</h3>
+                        <p>Nuit à partir de 96€</p>
+                        <!-- Etoiles -->
+                        </a>
+                    </div>
+                    <a href="#">Afficher plus</a>
                     <aside>
-
+                        <h2>Les plus populaires</h2>
+                        <img src="images/icons/chart-line_icon.svg" alt="graphique de popularité" width="20px" />
+                        <div>
+                            <a href="#">
+                            <img src="images/hebergements/hebergements_small_7.jpg" alt="Hôtel le soleil du matin">
+                                <div>
+                                    <h3>Hôtel le soleil du matin</h3>
+                                    <p>Nuit à partir de 128€</p>
+                                    <!-- Etoiles -->
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                            <img src="images/hebergements/hebergements_small_8.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                                <div>
+                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                    <p>Nuit à partir de 71€</p>
+                                    <!-- Etoiles -->
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                            <img src="images/hebergements/hebergements_small_9.jpg" alt="Hôtel Tout bleu et Blanc">
+                                <div>
+                                    <h3>Hôtel Tout bleu et Blanc</h3>
+                                    <p>Nuit à partir de 68€</p>
+                                    <!-- Etoiles -->
+                                </div>
+                            </a>
+                        </div>
                     </aside>
                 </section>
                 <section>
-
+                    <h2>Activités à Marseille</h2>
+                    <div>
+                        <a href="#">
+                        <h3>Vieux Port</h3>
+                        <img src="images/activites/Activites_small_1.jpg" alt="Vieux Port">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <h3>Fort de Pomègues</h3>
+                        <img src="images/activites/Activites_small_2.jpg" alt="Fort de Pomègues">
+                        </a>
+                        <a href="#">
+                         <h3>Îles du Frioul</h3>
+                        <img src="images/activites/Activites_small_3.jpg" alt="Îles du Frioul">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <h3>Parc National des Calanques</h3>
+                        <img src="images/activites/Activites_small_4.jpg" alt="Parc National des Calanques">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <h3>Notre-Dame-de-la-garde</h3>
+                        <img src="images/activites/Activites_small_5.jpg" alt="Notre-Dame-de-la-garde">
+                        </a>
+                        <a href="#">
+                        <h3>Parc Longchamp</h3>
+                        <img src="images/activites/Activites_small_6.jpg" alt="Parc Longchamp">
+                        </a>
+                    </div>
                 </section>
             </article>
         </main>
         <footer>
 
         </footer>
-
     </body>
 </html>
