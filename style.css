@@ -16,7 +16,7 @@ body
 {
     min-width: 992px;
     font-family: 'Raleway', Arial, Georgia, 'Times New Roman', serif;
-    margin: 0 40px;
+    
 }
 
 span
@@ -31,6 +31,7 @@ header
 {
     display: flex;
     justify-content: space-between;
+    margin: 0 40px;
 }
 
 header a
@@ -70,6 +71,12 @@ nav a:hover
 }
 
 /* MAIN (SECTION 1 - Formulaire & Filtres)*/
+
+main
+{
+     height: 1380px;
+     margin: 0 40px;
+}
 
 h1 + p
 {
@@ -140,7 +147,11 @@ input
     padding-right: 10px;
     border: 2px solid #F2F2F2;
     border-radius: 20px;
-   
+}
+
+#filtres1 a:hover
+{
+    color: #0065FC;
 }
 
 .fa-money-bill-wave
@@ -164,6 +175,11 @@ input
     border-radius: 20px;
 }
 
+#filtres2 a:hover
+{
+    color: #0065FC;
+}
+
 .fa-child
 {
     padding: 10px 14px;
@@ -185,12 +201,17 @@ input
     border-radius: 20px;
 }
 
+#filtres3 a:hover
+{
+    color: #0065FC;
+}
+
 .fa-heart
 {
     padding: 10px 12px;
     border: 2px solid #DEEBFF;
     border-radius: 25px;
-    background-color: #DEEBFF;
+    background-color:#DEEBFF;
     color: #0065FC; 
 }
 
@@ -204,6 +225,11 @@ input
     padding-right: 20px;
     border: 2px solid #F2F2F2;
     border-radius: 20px;
+}
+
+#filtres4 a:hover
+{
+    color: #0065FC;
 }
 
 .fa-dog
@@ -603,3 +629,41 @@ aside
     color: black;
 }
 
+/* FOOTER*/
+
+footer
+{
+     display: flex;
+     align-items: center;
+     height: 200px;
+     padding-left: 35px;
+     background-color:#F2F2F2;
+     margin: none;
+}
+
+footer a
+{
+    color: #828282;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#div1footer
+{
+      display: flex;
+      flex-direction: column;
+      margin-right: 220px;
+}
+
+#div2footer
+{
+      display: flex;
+      flex-direction: column;
+      margin-right: 220px;
+}
+
+#div3footer
+{
+      display: flex;
+      flex-direction: column;
+}
