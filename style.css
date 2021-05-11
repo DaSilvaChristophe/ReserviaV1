@@ -15,9 +15,7 @@
 body
 {
     font-family: 'Raleway', Arial, Georgia, 'Times New Roman', serif;
-    border: 1px solid black;
 }
-
 span
 {
     color: black;
@@ -29,10 +27,12 @@ header
 {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     width: auto;
     margin: 0 40px;
-}
 
+    
+}
 header a
 {
     text-decoration: none;
@@ -61,7 +61,7 @@ nav a:hover
 
 #inscription
 {
-    color:#0065FC ;
+    color:#0065FC;
 }
 
 #inscription:hover
@@ -123,8 +123,26 @@ input
     border: 1px solid #0065FC;
     border-radius: 0 15px 15px 0;
 }
-
 .formsearch:hover
+{
+    cursor: pointer; 
+}
+.fa-search
+{
+    display: flex;
+    align-items: center;
+    background: #0065FC;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #0065FC;
+    border-radius: 15px 15px 15px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    right: 10px;
+}
+.fa-search:hover
 {
     cursor: pointer; 
 }
@@ -313,6 +331,7 @@ input
     padding: 5px 5px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 4px 4px 4px #F2F2F2;
 }
 
 .blocksection2 img
@@ -393,6 +412,7 @@ aside
     margin-bottom: 20px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 4px 4px 4px #F2F2F2;
 }
 
 .blockaside img
@@ -644,13 +664,213 @@ footer a
       flex-direction: column;
 }
 
+/* - Petits écrans (< 768 px) */
+
+@media all and (max-width: 768px)
+{
+    header,main 
+    {
+        margin: 0 10px;
+    }
+
+    header 
+    {
+        flex-wrap: wrap;
+    }
+    nav 
+    {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        height: 50px;
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    nav a 
+    {
+        justify-content: center;
+        flex-direction: row-reverse;
+        height: 50px;
+        width: 40%;
+        position: relative;
+    }
+    #inscription
+    {
+        justify-content: flex-start;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    nav a:hover
+    {
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
+    #section1
+    {
+        margin: 0 10px
+    }
+    form 
+    {
+        margin-top: 20px;
+    }
+    .formulaire
+    {
+        width: 100%;
+    }
+    .formsearch
+    {
+        display: none;
+    }
+
+    #divfiltres
+    {
+        width: auto;
+        flex-wrap: wrap;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+    #divfiltres p 
+    {
+        display: flex;
+        flex-basis: 100%;
+    }
+    #filtres1
+    {
+        margin: 0 5px;
+        width: 135px;
+    }
+    #filtres2
+    {
+        margin: 0 5px;
+        width: 100px;
+    }
+    #filtres3
+    {
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 130px;
+    }
+    #filtres4
+    {
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 175px;
+    }
+    #info
+    {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    #section2
+    {
+        width: auto;
+        margin-top: 20px;
+        background-color: white;
+    }
+    #flexsection2
+    {
+        flex-direction: column;
+    }
+    #flexsection2 a
+    {
+      width: 100%;
+    }
+    aside
+    {
+        width: auto;
+        flex-direction: row;
+    }
+    #flexsectionaside
+    {
+        flex-direction: column-reverse;
+    }
+    .texteaside
+    {
+        width: 55%;
+    }
+    #flexsection3
+    {
+        flex-direction: column;
+    }
+    #flexsection3 a
+    {
+        width: 95%;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #flexsection3 div
+    {
+        width: 95%;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .activite1-4
+    {
+        width: 95%;
+        height: 125px;
+        margin-top: 12px;
+    }
+    .activite2
+    {
+        width: 95%;
+        height: 125px;
+    }
+    .activite3
+    {
+        width: 95%;
+        height: 125px;
+    }
+    .activite5
+    {
+        width: 100%;
+        height: 125px;
+    }
+    .activite6
+    {
+        width: 100%;
+        height: 125px;
+    }
+    #section3 h2
+    {
+        padding-bottom: 20px;
+        margin-left: 15px;
+    }
+    footer 
+    {
+        width: auto;
+        flex-direction: column;
+        font-size: 0.9em;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    #div1footer
+    {
+      margin-right: 70px;
+    }
+    #div2footer
+    {
+      margin-right: 70px;
+    }
+    #div3footer
+    {
+      margin-right: 70px;
+    }
+}
+
 /* - Tablettes (768 px - 991 px) */
 
-@media all and (min-width: 768px) and (max-width: 991px)
+@media all and (min-width: 769px) and (max-width: 991px)
 {
     form 
     {
         margin-top: 20px;
+    }
+    .fa-search
+    {
+        display: none;
     }
     #divfiltres
     {
@@ -745,6 +965,10 @@ footer a
 
  @media all and (min-width: 992px) and (max-width: 1199px) 
 {
+    .fa-search
+    {
+        display: none;
+    }
     #flexsectionaside
     {
         flex-direction: column;
@@ -774,5 +998,15 @@ footer a
     {
         position: relative;
         top: 25px;
+    }
+}
+
+/* Grands écrans + de 1199px */
+
+@media all and (min-width: 1199px) 
+{
+    .fa-search
+    {
+        display: none;
     }
 }
