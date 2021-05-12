@@ -16,6 +16,7 @@ body
 {
     font-family: 'Raleway', Arial, Georgia, 'Times New Roman', serif;
 }
+
 span
 {
     color: black;
@@ -30,9 +31,8 @@ header
     align-items: baseline;
     width: auto;
     margin: 0 40px;
-
-    
 }
+
 header a
 {
     text-decoration: none;
@@ -122,11 +122,15 @@ input
     color: white;
     border: 1px solid #0065FC;
     border-radius: 0 15px 15px 0;
+    position: relative;
+    right: 20px;
 }
+
 .formsearch:hover
 {
     cursor: pointer; 
 }
+
 #divfiltres
 {
     width: auto;
@@ -135,6 +139,7 @@ input
     align-items: center;
     margin: 20px 0;
 }
+
 #filtres1 
 {
     display: flex;
@@ -254,7 +259,6 @@ input
     display: flex;
     align-items: center;
     margin: 20px 0;
-
 }
 
 .fa-info
@@ -290,7 +294,6 @@ input
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 
 #flexsection2 a
@@ -627,7 +630,6 @@ footer a
       display: flex;
       flex-direction: column;
       margin-right: 150px
-      
 }
 
 #div2footer
@@ -649,9 +651,9 @@ footer a
 {
     header,main 
     {
-        margin: 0 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-
     header 
     {
         flex-wrap: wrap;
@@ -920,7 +922,8 @@ footer a
     }
     .fa-chart-line
     {
-        display: none;
+        position: relative;
+        left: 15px;
     }
     .staraside
     {
