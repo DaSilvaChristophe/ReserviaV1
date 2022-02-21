@@ -28,28 +28,25 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    width: auto;
-    margin: 0 40px;
+    height: 50px;
+    margin: 0 20px;
 }
 
 header a
 {
     text-decoration: none;
     color: #828282;
-    height: 100px;
 }
 
-nav
-{
+nav {
     display: flex;
-    align-items: center;
 }
 
 nav a
 {
     display: flex;
     align-items: center;
+    height: 50px;
     padding: 0 15px;
 }
 
@@ -675,6 +672,9 @@ footer a
         width: 40%;
         position: relative;
     }
+    h1{
+        margin-top: 60px
+    }
     #inscription
     {
         justify-content: flex-start;
@@ -775,10 +775,14 @@ footer a
     {
         width: auto;
         flex-direction: row;
+        justify-content: center;
     }
     #flexsectionaside
     {
         flex-direction: column-reverse;
+    }
+    .fa-chart-line{
+        margin-left: 10px;
     }
     .texteaside
     {
@@ -866,6 +870,7 @@ footer a
     {
         visibility: hidden;
     }
+    
     #divfiltres
     {
         font-size: 0.9em;
@@ -917,18 +922,19 @@ footer a
     aside
     {
         width: auto;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
     }
     .fa-chart-line
     {
         position: relative;
         left: 15px;
+        margin-bottom: 10px;
     }
     .staraside
     {
         position: relative;
-        top: 25px;
+        top: 15px;
     }
     #section3 h2
     {
@@ -992,7 +998,7 @@ footer a
     .staraside
     {
         position: relative;
-        top: 25px;
+        top: 12px;
     }
 }
 
